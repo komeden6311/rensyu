@@ -69,7 +69,7 @@ def main():
     username = os.environ["TWITTER_USERNAME"].lstrip("@")
     keyword = os.environ["WATCH_KEYWORD"]
     ntfy_topic = os.environ["NTFY_TOPIC"]
-    interval = int(os.environ.get("CHECK_INTERVAL_SECONDS", "300"))
+    interval = int(os.environ.get("CHECK_INTERVAL_SECONDS", "60"))
 
     since_id = get_since_id()
     print(f"Monitoring @{username} for keyword: 「{keyword}」")
